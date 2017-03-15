@@ -24,7 +24,7 @@ int Count(){
     sum = sum + (sum * 0.02);
   if(days >= 120)
     sum = sum + (sum * 0.06);
-  if(days = 360)
+  if(days == 360)
     sum = sum + (sum * 0.12);
   return sum;
 }
