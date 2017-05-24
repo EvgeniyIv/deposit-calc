@@ -1,5 +1,5 @@
-#ifndef DEPOST_H
+#ifndef DEPOSIT_H
 #define DEPOSIT_H
-int Check(int, int);
-int perform(int,int);
+int InputCheck(int, int);
+int Count(int, int);
 #endif

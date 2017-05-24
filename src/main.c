@@ -1,16 +1,27 @@
-#include <stdoi.h>
-#include <stdlib.h>
 #include "deposit.h"
+#include <stdio.h>
+int main()
+{
+    int days, sum;
+    
+    printf("Enter days:");
+    scanf("%d", &days);
+    printf("\nEnter sum:");
+    scanf("%d", &sum);
 
-int main(){
-  int cash=0; int day=0;
-  printf("Summa vklada");
-  scanf("%d",&cash);
-  printf("kol-vo dney");
-  scanf("%d"&day);
-
-  if(check(day,cash))return 0;
-  task (day, cash);
-
-  return 0;
+    while(!InputCheck(days,sum)){
+        printf("\nIncorrect data input\n");
+        printf("\n Enter again\n");
+        printf("Enter days:");
+        scanf("%d", &days);
+        printf("\nEnter sum:");
+        scanf("%d", &sum);
+    }
+    
+    sum = Count(days,sum);
+    
+    printf("\nDeposit sum = %d\n", sum);
+    
+    return 0;
 }
+
